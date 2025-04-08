@@ -14,7 +14,7 @@ WHY?
 3. works with async/await for high performance
 """
 app = FastAPI()
-app.mount("/static", StaticFiles(directory = "app/static"), name = "static")
+# app.mount("/static", StaticFiles(directory = r"app\static"), name = "static")
 
 @app.get("/")
 def root():
